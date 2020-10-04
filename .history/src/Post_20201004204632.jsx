@@ -5,7 +5,7 @@ import {AccountCircle, ChatBubble, ExpandMore, ExpandMoreOutlined, NearMe, Thumb
 
 function Post({profilePic, image, userName,timestamp,message, key}) {
     return (
-        <div className="post"  key= {key}>
+        <div className="post" >
           <div className="post__top">
               <Avatar src={profilePic} className={"post__avatar"}/>
               <div className="post__topInfo">
