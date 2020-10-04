@@ -3,9 +3,9 @@ import "./Post.css";
 import {Avatar} from "@material-ui/core";
 import {AccountCircle, ChatBubble, ExpandMore, ExpandMoreOutlined, NearMe, ThumbUp} from "@material-ui/icons";
 
-function Post({profilePic, image, userName,timestamp,message}) {
+function Post({profilePic, image, userName,timestamp,message,key}) {
     return (
-        <div className="post" >
+        <div className="post"  key= {key}>
           <div className="post__top">
               <Avatar src={profilePic} className={"post__avatar"}/>
               <div className="post__topInfo">

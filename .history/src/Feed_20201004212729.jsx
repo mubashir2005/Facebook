@@ -19,7 +19,7 @@ function Feed() {
 
            <StoryReel/>
            <MessageSender />
-           {posts.map((post) => (
+           {posts.map((post => (
                <Post 
                  key= {post.id}
                  profilePic= {post.data.profilePic}
@@ -28,10 +28,7 @@ function Feed() {
                  image= {post.data.image}
                  timestamp= {post.data.timestamp}
                 
-               />
-               
-           
-           
+               />)
            ))}
 
 
