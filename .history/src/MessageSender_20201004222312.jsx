@@ -3,7 +3,7 @@ import "./MessageSender.css";
 import {Avatar} from "@material-ui/core";
 import {InsertEmoticon, PhotoLibrary, Videocam} from "@material-ui/icons";
 import {useStateValue} from "./StateProvider";
-import db from "./firebase";
+import db from "./firebase.js";
 import firebase from "firebase";
 
 

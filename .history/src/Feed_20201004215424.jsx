@@ -10,10 +10,12 @@ function Feed() {
     const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-      db.collection("posts").orderBy('timestamp', 'desc').onSnapshot((snapshot) => 
-      setPosts(snapshot.docs.map((doc) => ({id : doc.id, data: doc.data() })))
-      );
-  }, []);
+      db.collection("posts").onSnapshot((snapshot) => 
+      setPosts(snapshot.docs.map((doc) => ({i})))
+      )
+  }
+
+  )
 
   
          
@@ -26,10 +28,11 @@ function Feed() {
                <Post 
                  key= {post.id}
                  profilePic= {post.data.profilePic}
-                 image= {post.data.image}
-                 userName= {post.data.userName}
-                 timestamp= {post.data.timestamp}
                  message= {post.data.message}
+                 userName= {post.data.userName}
+                 image= {post.data.image}
+                 timestamp= {post.data.timestamp}
+                
                />
                
            

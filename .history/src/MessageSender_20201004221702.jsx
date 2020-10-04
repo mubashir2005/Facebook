@@ -3,8 +3,8 @@ import "./MessageSender.css";
 import {Avatar} from "@material-ui/core";
 import {InsertEmoticon, PhotoLibrary, Videocam} from "@material-ui/icons";
 import {useStateValue} from "./StateProvider";
-import db from "./firebase";
-import firebase from "firebase";
+import db from "./firebase.js";
+import firebase from "./firebase.js";
 
 
 function MessageSender() {
@@ -20,10 +20,7 @@ function MessageSender() {
 
      db.collection('posts').add({
          message: input,
-         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-         profilePic: user.photoURL,
-         userName: user.displayName,
-         image: imgUrl,
+         timestamp: fireba
      })
      //some clever db stuff
 
