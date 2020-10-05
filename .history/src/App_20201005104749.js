@@ -8,6 +8,7 @@ import Login from "./Login.jsx"
 import {useStateValue} from "./StateProvider";
 
 function App() {
+
  const [{user }, dispatch]= useStateValue()
 
   return (

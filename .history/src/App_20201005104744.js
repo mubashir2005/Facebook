@@ -8,9 +8,11 @@ import Login from "./Login.jsx"
 import {useStateValue} from "./StateProvider";
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
  const [{user }, dispatch]= useStateValue()
 
   return (
+   
     <div className="app">
 
         {!user ? <Login/> : (
