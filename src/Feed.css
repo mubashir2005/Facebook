@@ -1,8 +1,16 @@
 .Feed{
-    flex: 1;
-    padding: 30px 100px;
     display: flex;
+    flex: 1;
+    padding: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f1f2f5;
 }
+@media (min-width: 900px){
+  .Feed{
+      padding: 30px 40px;
+  }
+}
+
+

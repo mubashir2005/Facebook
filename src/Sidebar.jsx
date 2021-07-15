@@ -19,36 +19,59 @@ function Sidebar(){
         const [{ user },dispatch]= useStateValue();
 
         return (
-            <div className="sidebar">
-                <SidebarRow
-                    src= {user.photoURL}
-                    title={user.displayName}
-                />
-                <SidebarRow  Icon={LocalHospitalIcon}
-                             title="Covid-19 Information Center"
-                />
-                <SidebarRow Icon={EmojiFlagsIcon}
-                            title="Pages"
-                />
-                <SidebarRow Icon={PeopleIcon}
-                            title="Friends"
-                />
-                <SidebarRow Icon={ChatIcon}
-                            title="Messenger"
-                />
-                <SidebarRow Icon={StorefrontIcon}
-                            title="Marketplace"
-                />
-                <SidebarRow Icon={VideoLibraryIcon}
-                            title="Videos"
-                />
-                <SidebarRow Icon={ExpandMoreOutlinedIcon}
-                            title="Marketplace"
-                />
+            <div>
+                    <div className="sidebar">
+                            <SidebarRow
+                                src= {user.photoURL}
+                                title={user.displayName}
+                            />
+                            <SidebarRow  Icon={LocalHospitalIcon}
+                                         title="Covid-19 Information Center"
+                            />
+                            <SidebarRow Icon={EmojiFlagsIcon}
+                                        title="Pages"
+                            />
+                            <SidebarRow Icon={PeopleIcon}
+                                        title="Friends"
+                            />
+                            <SidebarRow Icon={ChatIcon}
+                                        title="Messenger"
+                            />
+                            <SidebarRow Icon={StorefrontIcon}
+                                        title="Marketplace"
+                            />
+                            <SidebarRow Icon={VideoLibraryIcon}
+                                        title="Videos"
+                            />
+                            <SidebarRow Icon={ExpandMoreOutlinedIcon}
+                                        title="Marketplace"
+                            />
 
 
 
+                    </div>
+                    <div className="sidebar_small">
+                            <SidebarRow
+                                src= {user.photoURL}
+                            />
+                            <SidebarRow  Icon={LocalHospitalIcon}
+                            />
+                            <SidebarRow Icon={EmojiFlagsIcon}
+                            />
+                            <SidebarRow Icon={PeopleIcon}
+                            />
+                            <SidebarRow Icon={ChatIcon}
+                            />
+                            <SidebarRow Icon={StorefrontIcon}
+                            />
+                            <SidebarRow Icon={VideoLibraryIcon}
+                            />
+                            <SidebarRow Icon={ExpandMoreOutlinedIcon}
+                            />
+
+                    </div>
             </div>
+
         );
     }
 

@@ -6,3 +6,8 @@
     display: flex;
 
 }
+@media (max-width: 900px){
+  .no_small{
+      visibility: hidden;
+  }
+}

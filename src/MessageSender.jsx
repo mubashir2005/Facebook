@@ -47,7 +47,8 @@ function MessageSender() {
                     <input
                         value={imgUrl}
                         onChange={e => (setUrl(e.target.value))}
-                        placeholder={'imageURL (optional)'}
+                        placeholder={'imageURL'}
+                        className={"messageSender__image"}
                         type="text"/>
                     <button onClick={handleSubmit} type="submit">
                         Hidden Submit
@@ -57,15 +58,15 @@ function MessageSender() {
             <div className="messageSender__bottom">
                    <div className="messageSender__option">
                        <Videocam  style={{ color:"red"}}/>
-                       <h3>Live Video</h3>
+                       <h3 className={'no_small'}>Live Video</h3>
                    </div>
                     <div className="messageSender__option">
                         <PhotoLibrary style={{color:"green"}}/>
-                        <h3>Photo/Video</h3>
+                        <h3 className={'no_small'}>Photo/Video</h3>
                     </div>
                      <div className="messageSender__option">
                          <InsertEmoticon style={{color:"orange"}} />
-                         <h3>Feeling/Activity</h3>
+                         <h3 className={'no_small'}>Feeling/Activity</h3>
                      </div>
 
             </div>

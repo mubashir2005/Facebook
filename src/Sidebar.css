@@ -1,4 +1,22 @@
 .sidebar{
     padding: 20px 10px;
     flex: 0.33;
+    margin: 0;
+}
+.sidebar_small{
+    display: flex !important;
+    flex-direction: column;
+    flex: 0.20;
+    margin: 0.1em;
+    cursor: pointer;
+}
+@media (max-width: 900px){
+    .sidebar{
+        visibility: hidden;
+    }
+}
+@media (min-width: 900px){
+    .sidebar_small{
+        visibility: hidden;
+    }
 }

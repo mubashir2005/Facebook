@@ -5,7 +5,7 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 5px 7px -7px rgba(0,0,0,0.75);
-    width: 100%;
+    width: 65%;
 }
 .messageSender__top{
     display: flex;
@@ -53,3 +53,20 @@
     border-radius: 20px;
 
 }
+@media (min-width: 900px){
+    .messageSender{
+    width: 100%;
+}
+}
+@media (max-width: 900px){
+    .messageSender__input{
+        width: 65% !important;
+    }
+    .messageSender__image{
+        width: 50% !important;
+    }
+    .messageSender__option{
+        margin: 0 auto !important;
+    }
+}
+

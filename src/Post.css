@@ -1,9 +1,9 @@
 .post{
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 15px;
+    width: 60%;
     background-color: white;
     box-shadow: 0 5px 7px -7px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    margin-top: 30px;
 }
 .post__top{
     position: relative;
@@ -55,4 +55,10 @@
     background-color: #eff2f5;
     border-radius: 10px;
 }
+@media (min-width: 900px){
+    .post{
+        width: 100%;
+    }
+}
+
 
